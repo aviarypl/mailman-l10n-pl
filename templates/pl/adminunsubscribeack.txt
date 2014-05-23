@@ -1,2 +1,2 @@
-%(member)s zosta³ wypisany z listy %(listname)s.
+%(member)s zostaÅ‚ wypisany z listy %(listname)s.
 
