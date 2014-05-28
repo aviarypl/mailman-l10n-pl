@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Mailman 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Fri May  2 21:50:40 2014\n"
-"PO-Revision-Date: 2009-02-05 23:29+0100\n"
-"Last-Translator: Zbigniew Szalbot <zszalbot@gmail.com>\n"
+"PO-Revision-Date: 2014-05-28 11:29+0100\n"
+"Last-Translator: Stefan Plewako <splewako@aviary.pl>\n"
 "Language-Team: Polish <sawickib@iem.pw.edu.pl>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -1384,7 +1384,8 @@ msgstr "Wprowadź kod potwierdzający"
 #: Mailman/Cgi/confirm.py:209
 msgid ""
 "Please enter the confirmation string\n"
-"    (i.e. <em>cookie</em>) that you received in your email message, in the box\n"
+"    (i.e. <em>cookie</em>) that you received in your email message, in the "
+"box\n"
 "    below.  Then hit the <em>Submit</em> button to proceed to the next\n"
 "    confirmation step."
 msgstr ""
@@ -1511,8 +1512,8 @@ msgid ""
 "notified\n"
 "            of the moderator's decision."
 msgstr ""
-"            Otrzymaliśmy potwierdzenie zapisania się na listę %(listname)"
-"s. \n"
+"            Otrzymaliśmy potwierdzenie zapisania się na listę "
+"%(listname)s. \n"
 "            Jednak niezbędne jest jeszcze zatwierdzenie\n"
 "            decyzji przez moderatora listy. \n"
 "            Zostaniesz poinformowany o jego decyzji."
@@ -1606,7 +1607,8 @@ msgstr "<em>Niedostępny</em>"
 #: Mailman/Cgi/confirm.py:476
 msgid ""
 "Your confirmation is required in order to complete the\n"
-"    unsubscription request from the mailing list <em>%(listname)s</em>.  You\n"
+"    unsubscription request from the mailing list <em>%(listname)s</em>.  "
+"You\n"
 "    are currently subscribed with\n"
 "\n"
 "    <ul><li><b>Real name:</b> %(fullname)s\n"
@@ -2734,25 +2736,22 @@ msgid "Private Archive Error - %(msg)s"
 msgstr "Błąd prywatnego archiwum - %(msg)s"
 
 #: Mailman/Cgi/private.py:141
-#, fuzzy
 msgid ""
 "If you are a list member,\n"
 "                          your password has been emailed to you."
-msgstr "Email z przypomnieniem hasła został wysłany."
+msgstr "E-mail z przypomnieniem hasła został wysłany."
 
 #: Mailman/Cgi/private.py:145
-#, fuzzy
 msgid "Please enter your email address"
-msgstr "Adres email:"
+msgstr "Wprowadź adres e-mail"
 
 #: Mailman/Cgi/private.py:206
 msgid "Private archive file not found"
 msgstr "Plik archiwum nie znaleziony"
 
 #: Mailman/Cgi/rmlist.py:65
-#, fuzzy
 msgid "No such list %(safelistname)s"
-msgstr "Lista %(listname)s nie istnieje na tym serwerze"
+msgstr "Lista „%(listname)s” nie istnieje na tym serwerze"
 
 #: Mailman/Cgi/rmlist.py:83
 msgid "You're being a sneaky list owner!"
@@ -2775,8 +2774,8 @@ msgstr "    <b>%(listname)s</b> została usunięta."
 #: Mailman/Cgi/rmlist.py:173
 msgid ""
 "There were some problems deleting the mailing list\n"
-"        <b>%(listname)s</b>.  Contact your site administrator at %(sitelist)"
-"s\n"
+"        <b>%(listname)s</b>.  Contact your site administrator at "
+"%(sitelist)s\n"
 "        for details."
 msgstr ""
 "Pojawiło się kilka problemów podczas usuwania \n"
@@ -3668,9 +3667,8 @@ msgid "Arabic"
 msgstr "arabski"
 
 #: Mailman/Defaults.py:1579
-#, fuzzy
 msgid "Asturian"
-msgstr "estoński"
+msgstr "asturyjski"
 
 #: Mailman/Defaults.py:1580
 msgid "Catalan"
@@ -3706,7 +3704,7 @@ msgstr "baskijski"
 
 #: Mailman/Defaults.py:1588
 msgid "Persian"
-msgstr ""
+msgstr "perski"
 
 #: Mailman/Defaults.py:1589
 msgid "Finnish"
@@ -3717,13 +3715,12 @@ msgid "French"
 msgstr "francuski"
 
 #: Mailman/Defaults.py:1591
-#, fuzzy
 msgid "Galician"
-msgstr "włoski"
+msgstr "galicyjski"
 
 #: Mailman/Defaults.py:1592
 msgid "Greek"
-msgstr ""
+msgstr "grecki"
 
 #: Mailman/Defaults.py:1593
 msgid "Hebrew"
@@ -3786,7 +3783,6 @@ msgid "Russian"
 msgstr "rosyjski"
 
 #: Mailman/Defaults.py:1608
-#, fuzzy
 msgid "Slovak"
 msgstr "słowacki"
 
@@ -7281,8 +7277,8 @@ msgid ""
 "            the problems are corrected soon."
 msgstr ""
 "<p>Otrzymano kilka zwrotów z Twojego adresu. W tej chwili <em>współczynnik \n"
-"zwrotów</em> wynosi %(score)s (maksymalna dopuszczalna wartość to %(total)"
-"s).\n"
+"zwrotów</em> wynosi %(score)s (maksymalna dopuszczalna wartość to "
+"%(total)s).\n"
 "Proszę sprawdzić, czy adres jest poprawny i czy nie ma problemów z "
 "dostarczaniem wiadomości\n"
 "na ten adres. Współczynnik zwrotów zostanie automatycznie wyzerowany, "
@@ -7494,6 +7490,10 @@ msgid ""
 "Approved: password line, but due to the way it is coded in the\n"
 "HTML it can't be safely removed.\n"
 msgstr ""
+"Wiadomość odrzucona.\n"
+"Wygląda na to, że wiadomość zawiera fragment HTML z linią\n"
+"„Approved: hasło” jednak ze względu na sposób sformatowania kodu HTML\n"
+"nie może ona zostać bezpiecznie usunięta.\n"
 
 #: Mailman/Handlers/CalcRecips.py:78
 msgid ""
@@ -7945,8 +7945,8 @@ msgstr "kontrola praw dostępu do pliku %(file)s"
 #: Mailman/MTA/Postfix.py:334
 msgid "%(file)s permissions must be 066x (got %(octmode)s)"
 msgstr ""
-"prawa dostępu do pliku %(file)s powinny być ustawione na 066x (są %(octmode)"
-"s)"
+"prawa dostępu do pliku %(file)s powinny być ustawione na 066x (są "
+"%(octmode)s)"
 
 #: Mailman/MTA/Postfix.py:336 Mailman/MTA/Postfix.py:363
 #: Mailman/MTA/Postfix.py:374 bin/check_perms:125 bin/check_perms:153
@@ -8892,7 +8892,7 @@ msgstr "Zapisywanie listy"
 
 #: bin/convert.py:44 bin/fix_url.py:51 bin/reset_pw.py:57
 msgid "%%%"
-msgstr ""
+msgstr "%%%"
 
 #: bin/discard:19
 msgid ""
@@ -10513,8 +10513,8 @@ msgid ""
 "after\n"
 "        the fact by typing `m.Lock()'\n"
 "\n"
-"        Note that if you use this option, you should explicitly call m.Save"
-"()\n"
+"        Note that if you use this option, you should explicitly call m."
+"Save()\n"
 "        before exiting, since the interpreter's clean up procedure will not\n"
 "        automatically save changes to the MailList object (but it will "
 "unlock\n"
@@ -10715,9 +10715,8 @@ msgid "Pending subscriptions:"
 msgstr "Prośby o zapisanie:"
 
 #: cron/checkdbs:155
-#, fuzzy
 msgid "Pending unsubscriptions:"
-msgstr "Prośby o zapisanie:"
+msgstr "Prośby o wypisanie:"
 
 #: cron/checkdbs:162
 msgid ""
