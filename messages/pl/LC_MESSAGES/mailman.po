@@ -1,7 +1,7 @@
 # Polish translation for Mailman
 # Copyleft protected by GNU/GPL
 # BArtosz Sawicki <sawickib@iem.pw.edu.pl>, 2002-2005
-# Marcin Sochacki <wanted@linux.gda.pl>, 2001-2002.
+# Marcin Sochacki <wanted@linux.gda.pl>, 2001-2002
 # Zbigniew Szalbot <zbyszek@slowo.pl>, 2008-2009
 # Stefan Plewako <splewako@aviary.pl>, 2014-2015
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Mailman 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Fri Jan 23 17:36:52 2015\n"
-"PO-Revision-Date: 2015-01-30 17:33+0100\n"
+"PO-Revision-Date: 2015-01-30 18:30+0100\n"
 "Last-Translator: Stefan Plewako <splewako@aviary.pl>\n"
 "Language-Team: Polish <sawickib@iem.pw.edu.pl>\n"
 "Language: pl\n"
@@ -40,11 +40,11 @@ msgstr " w "
 
 #: Mailman/Archiver/HyperArch.py:512
 msgid "Previous message (by thread):"
-msgstr ""
+msgstr "Poprzednia wiadomość (według wątku):"
 
 #: Mailman/Archiver/HyperArch.py:534
 msgid "Next message (by thread):"
-msgstr ""
+msgstr "Następna wiadomość (według wątku):"
 
 #: Mailman/Archiver/HyperArch.py:707 Mailman/Archiver/HyperArch.py:743
 msgid "thread"
@@ -213,7 +213,7 @@ msgstr "z nieznanego powodu"
 
 #: Mailman/Bouncer.py:198
 msgid "bounce score incremented"
-msgstr ""
+msgstr "zwiększono licznik zwrotów"
 
 #: Mailman/Bouncer.py:228
 msgid "disabled"
@@ -261,7 +261,7 @@ msgstr "Błąd uwierzytelniania."
 
 #: Mailman/Cgi/admin.py:199
 msgid "The form lifetime has expired. (request forgery check)"
-msgstr ""
+msgstr "Przekroczono limit czasu formularza. (ochrona żądań przed oszustwami)"
 
 #: Mailman/Cgi/admin.py:205
 msgid ""
@@ -977,6 +977,12 @@ msgid ""
 "addition, the password below, if set, can be used for that purpose and\n"
 "no other."
 msgstr ""
+"Oprócz powyższych haseł, możesz określić hasło dla wstępnego\n"
+"zatwierdzania wiadomości na liście. Dowolne z tych dwóch haseł może\n"
+"zostać wykorzystane w nagłówku „Approved:” lub pierwszym wierszu wiadomości,\n"
+"aby wstępnie zatwierdzić wiadomość, która w innym wypadku,\n"
+"zostałaby zatrzymana do moderacji. Hasło poniżej, jeśli ustawione, może\n"
+"być wykorzystywane wyłącznie w tym celu i żadnym innym."
 
 #: Mailman/Cgi/admin.py:1296
 #, fuzzy
@@ -1166,19 +1172,19 @@ msgstr "wszystkie wstrzymane wiadomości."
 
 #: Mailman/Cgi/admindb.py:443
 msgid "Show this list grouped/sorted by"
-msgstr ""
+msgstr "Wyświetl listę pogrupowaną/posortowaną według"
 
 #: Mailman/Cgi/admindb.py:446
 msgid "sender/sender"
-msgstr ""
+msgstr "wysyłający/wysyłający"
 
 #: Mailman/Cgi/admindb.py:446
 msgid "sender/time"
-msgstr ""
+msgstr "wysyłający/czas"
 
 #: Mailman/Cgi/admindb.py:446
 msgid "ungrouped/time"
-msgstr ""
+msgstr "niepogrupowana/czas"
 
 #: Mailman/Cgi/admindb.py:462 Mailman/Cgi/admindb.py:702
 msgid "From:"
@@ -1316,7 +1322,7 @@ msgstr " jest już prenumeratorem"
 
 #: Mailman/Cgi/admindb.py:934
 msgid "%(addr)s is banned (matched: %(patt)s)"
-msgstr ""
+msgstr "Adres %(addr)s jest zablokowany (pasuje do: %(patt)s)"
 
 #: Mailman/Cgi/confirm.py:78
 msgid "Confirmation string was empty."
@@ -1334,6 +1340,13 @@ msgid ""
 "    Otherwise, <a href=\"%(confirmurl)s\">re-enter</a> your confirmation\n"
 "    string."
 msgstr ""
+"<b>Nieprawidłowy kod potwierdzenia:</b>\n"
+"    %(safecookie)s.\n"
+"\n"
+"<p>Ważność kodów potwierdzenia wygasa około %(days)s dni po prośbie o zapisanie.\n"
+"   Ważność wygasa również w przypadku, gdy prośba została w jakiś sposób obsłużona.\n"
+"   Jeśli ważność kodu wygasła, spróbuj ponownie przesłać prośbę o zapisanie.\n"
+"   W innym wypadku, <a href=\"%(confirmurl)s\">wprowadź ponownie</a> kod potwierdzenia."
 
 #: Mailman/Cgi/confirm.py:132
 msgid ""
@@ -2267,7 +2280,7 @@ msgstr "Błąd skryptu CGI"
 
 #: Mailman/Cgi/options.py:61
 msgid "Invalid request method: %(method)s"
-msgstr ""
+msgstr "Nieprawidłowa metoda żądania: %(method)s"
 
 #: Mailman/Cgi/options.py:74
 msgid "Invalid options to CGI script."
@@ -2288,19 +2301,19 @@ msgstr "Nie znaleziono prenumeratora: %(safeuser)s."
 
 #: Mailman/Cgi/options.py:180
 msgid "If you are a list member, a confirmation email has been sent."
-msgstr ""
+msgstr "Wiadomość potwierdzająca została wysłana (jeśli należysz do subskrybentów listy)."
 
 #: Mailman/Cgi/options.py:181
 msgid ""
 "If you are a list member, your unsubscription request has been\n"
 "             forwarded to the list administrator for approval."
-msgstr ""
+msgstr "Prośba o wypisanie z listy została skierowana do administratora listy w celu zatwierdzenia (jeśli należysz do subskrybentów listy)."
 
 #: Mailman/Cgi/options.py:220
 msgid ""
 "If you are a list member,\n"
 "            your password has been emailed to you."
-msgstr ""
+msgstr "Hasło zostało wysłane (jeśli należysz do subskrybentów listy)."
 
 #: Mailman/Cgi/options.py:263
 msgid "Authentication failed."
@@ -2314,12 +2327,12 @@ msgstr "Email z przypomnieniem hasła został wysłany."
 msgid ""
 "The list administrator may not view the other\n"
 "            subscriptions for this user."
-msgstr ""
+msgstr "Administrator listy nie może zobaczyć innych subskrypcji tego użytkownika."
 
 #: Mailman/Cgi/options.py:299 Mailman/Cgi/options.py:348
 #: Mailman/Cgi/options.py:476 Mailman/Cgi/options.py:699
 msgid "Note: "
-msgstr ""
+msgstr "Uwaga: "
 
 #: Mailman/Cgi/options.py:304
 msgid "List subscriptions for %(safeuser)s on %(hostname)s"
@@ -2335,7 +2348,7 @@ msgstr ""
 
 #: Mailman/Cgi/options.py:318
 msgid "nomail"
-msgstr ""
+msgstr "wył."
 
 #: Mailman/Cgi/options.py:345
 msgid ""
@@ -2343,6 +2356,8 @@ msgid ""
 "            or addresses for this user's other subscriptions.  However, the\n"
 "            subscription for this mailing list has been changed."
 msgstr ""
+"Administrator listy nie może zmienić nazwy i adresu innych subskrypcji użytkownika. \n"
+"Jednakże, ustawienia subskrypcji tej listy zostały zmienione."
 
 #: Mailman/Cgi/options.py:368
 msgid "Addresses did not match!"
@@ -2476,6 +2491,8 @@ msgid ""
 "                options for this mailing list subscription has been\n"
 "                changed."
 msgstr ""
+"Administrator listy nie może zmienić ustawień innych subskrypcji użytkownika. \n"
+"Jednakże, ustawienia subskrypcji tej listy zostały zmienione."
 
 #: Mailman/Cgi/options.py:706
 msgid ""
@@ -2672,7 +2689,7 @@ msgstr "Musisz wybrać listę."
 
 #: Mailman/Cgi/private.py:72
 msgid "Private archive - \"./\" and \"../\" not allowed in URL."
-msgstr ""
+msgstr "Archiwum prywatne - „./” oraz „../” są niedozwolone w adresie."
 
 #: Mailman/Cgi/private.py:109
 msgid "Private Archive Error - %(msg)s"
@@ -2804,7 +2821,7 @@ msgstr "Musisz wprowadzić prawidłowy adres e-mail.<br>"
 
 #: Mailman/Cgi/subscribe.py:138
 msgid "The form is too old.  Please GET it again."
-msgstr ""
+msgstr "Formularz jest zbyt stary, proszę pobrać go ponownie."
 
 #: Mailman/Cgi/subscribe.py:141
 msgid "Please take a few seconds to fill out the form before submitting it."
@@ -8427,11 +8444,11 @@ msgstr "Błędny adres e-mail dla opcji %(k)s: %(v)s"
 
 #: bin/config_list:345
 msgid "Only one of -i or -o is allowed"
-msgstr ""
+msgstr "Tylko jeden parametr, -i lub -o jest dozwolony"
 
 #: bin/config_list:347
 msgid "One of -i or -o is required"
-msgstr ""
+msgstr "Tylko jeden parametr, -i lub -o jest wymagany"
 
 #: bin/config_list:351
 msgid "List name is required"
@@ -9080,7 +9097,7 @@ msgstr "twórca list"
 
 #: bin/mmsitepass:86
 msgid "New %(pwdesc)s password: "
-msgstr ""
+msgstr "Nowe %(pwdesc)s hasło: "
 
 #: bin/mmsitepass:87
 msgid "Again to confirm password: "
@@ -9092,7 +9109,7 @@ msgstr "Hasła nie pasują do siebie"
 
 #: bin/mmsitepass:92
 msgid "Interrupted..."
-msgstr ""
+msgstr "Przerwano…"
 
 #: bin/mmsitepass:98
 msgid "Password changed."
@@ -9129,7 +9146,7 @@ msgstr ""
 
 #: bin/msgfmt.py:49
 msgid "Add a non-fuzzy translation to the dictionary."
-msgstr ""
+msgstr "Dodaj pewne tłumaczenie do słownika."
 
 #: bin/msgfmt.py:57
 msgid "Return the generated output."
