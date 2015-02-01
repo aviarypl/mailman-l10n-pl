@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Mailman 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Fri Jan 23 17:36:52 2015\n"
-"PO-Revision-Date: 2015-01-30 18:30+0100\n"
+"PO-Revision-Date: 2015-02-01 21:31+0100\n"
 "Last-Translator: Stefan Plewako <splewako@aviary.pl>\n"
 "Language-Team: Polish <sawickib@iem.pw.edu.pl>\n"
 "Language: pl\n"
@@ -985,14 +985,12 @@ msgstr ""
 "być wykorzystywane wyłącznie w tym celu i żadnym innym."
 
 #: Mailman/Cgi/admin.py:1296
-#, fuzzy
 msgid "Enter new poster password:"
-msgstr "Wprowadź nowe hasło moderatora:"
+msgstr "Wprowadź nowe hasło wstępnego zatwierdzania:"
 
 #: Mailman/Cgi/admin.py:1298
-#, fuzzy
 msgid "Confirm poster password:"
-msgstr "Potwierdź hasło moderatora:"
+msgstr "Potwierdź hasło wstępnego zatwierdzania:"
 
 #: Mailman/Cgi/admin.py:1307
 msgid "Submit Your Changes"
@@ -1003,9 +1001,8 @@ msgid "Moderator passwords did not match"
 msgstr "Podane hasła moderatora nie są identyczne"
 
 #: Mailman/Cgi/admin.py:1341
-#, fuzzy
 msgid "Poster passwords did not match"
-msgstr "Hasła nie są identyczne."
+msgstr "Podane hasła wstępnego zatwierdzania nie są identyczne"
 
 #: Mailman/Cgi/admin.py:1351
 msgid "Administrator passwords did not match"
@@ -2133,9 +2130,8 @@ msgid "Welcome email text file"
 msgstr "Tekst maila powitalnego"
 
 #: Mailman/Cgi/edithtml.py:49
-#, fuzzy
 msgid "Digest masthead"
-msgstr "nagłówek paczki"
+msgstr "Nagłówek paczki"
 
 #: Mailman/Cgi/edithtml.py:61
 msgid "List name is required."
@@ -2746,9 +2742,8 @@ msgid "Permanently remove mailing list <em>%(realname)s</em>"
 msgstr "Usuń listę <em>%(realname)s</em> (tej czynności nie można odwrócić)"
 
 #: Mailman/Cgi/rmlist.py:191
-#, fuzzy
 msgid "Permanently remove mailing list %(realname)s"
-msgstr "Usuń listę <em>%(realname)s</em> (tej czynności nie można odwrócić)"
+msgstr "Usuń listę %(realname) (tej czynności nie można odwrócić)"
 
 #: Mailman/Cgi/rmlist.py:204
 msgid ""
@@ -2989,7 +2984,6 @@ msgstr ""
 "zmieniłeś swój adres?"
 
 #: Mailman/Commands/cmd_confirm.py:69
-#, fuzzy
 msgid ""
 "You are currently banned from subscribing to this list.  If you think this\n"
 "restriction is erroneous, please contact the list owners at\n"
@@ -3529,7 +3523,6 @@ msgid ""
 msgstr ""
 
 #: Mailman/Commands/cmd_who.py:35
-#, fuzzy
 msgid ""
 "\n"
 "    who password [address=<address>]\n"
@@ -3547,7 +3540,9 @@ msgstr ""
 "        subskrybentów listy, po podaniu prawidłowego hasła. \n"
 "        Jeżeli wysyłasz komendę z innego adresu niż ten, z którego \n"
 "        jesteś zapisany, podaj swój adres za pomocą parametru \n"
-"        `address=<adres>' (adres bez nawiasów i cudzysłowów)\n"
+"        „address=<adres>” (adres bez nawiasów i cudzysłowów)\n"
+"        Jeśli podasz hasło administratora lub moderatora listy,\n"
+"        także ukryci subskrybenci będą widoczni.\n"
 
 #: Mailman/Commands/cmd_who.py:46
 msgid ""
@@ -4193,7 +4188,6 @@ msgid "Preserve"
 msgstr "Zachowaj"
 
 #: Mailman/Gui/ContentFilter.py:42
-#, fuzzy
 msgid ""
 "Policies concerning the content of list traffic.\n"
 "\n"
@@ -4228,24 +4222,27 @@ msgid ""
 "            configured to allow these conversions."
 msgstr ""
 "Reguły dotyczące automatycznego filtrowania formy (załączników) wiadomości.\n"
-"<p>Filtrowanie formy przebiega w następujący sposób: jeśli nowa wiadomość \n"
-"przyjdzie na adres listy i włączona jest opcja filtrowania treści, każdy z załączników \n"
-"porównywany jest z \n"
-"<a href=\"?VARHELP=contentfilter/filter_mime_types\"> listą zabronionych rozszerzeń plików.\n"
-"</a>. Jeżeli załącznik pasuje do jakiegokolwiek pozycji z tej listy, zostaje \n"
-"usunięty.\n"
-"<p>Następnie kasowane są załączniki <em>nie</em> pasujące do żadnej z pozycji na \n"
-"<a href=\"?VARHELP=contentfilter/pass_mime_types\">liście dozwolonych rozszerzeń</a>.\n"
-"Pusta lista dozwolonych rozszerzeń powoduje pominięcie tego etapu filtrowania.\n"
-"<p>Po wstępnym filtrowaniu, puste załączniki typu <tt>multipart</tt>\n"
-"są usuwane. Jeżeli po filtrowaniu cała wiadomość stanie się pusta, zostanie \n"
-"usunięta. Potem każda z grup załączników typu <tt>multipart/alternative</tt> jest \n"
-"zastępowana przez pierwszy niepusty element pozostały po filtrowaniu \n"
-"<p>Na koniec, jeśli włączona jest opcja \n"
-"<a href=\"?VARHELP=contentfilter/convert_html_to_plaintext\">\n"
-"convert_html_to_plaintext</a> i serwer zezwala na taką konwersję, \n"
-"każdy z pozostałych załączników typu <tt>text/html</tt> zostanie \n"
-"skonwertowany na <tt>text/plain</tt>."
+"\n"
+"  <p>Filtrowanie treści przebiega w następujący sposób: jeśli nowa wiadomość\n"
+"  przyjdzie na adres listy i włączona jest opcja filtrowania treści, każdy z załączników \n"
+"  porównywany jest z <a href=\"?VARHELP=contentfilter/filter_mime_types\">listą zabronionych rozszerzeń plików</a>.\n"
+"  Jeżeli załącznik pasuje do jakiegokolwiek pozycji z tej listy, zostaje usunięty.\n"
+"\n"
+"  <p>Następnie kasowane są załączniki <em>nie</em> pasujące do żadnej z pozycji na \n"
+"  <a href=\"?VARHELP=contentfilter/pass_mime_types\">liście dozwolonych</a>.\n"
+"  Pusta lista dozwolonych rozszerzeń powoduje pominięcie tego etapu filtrowania.\n"
+"\n"
+"  <p>Po wstępnym filtrowaniu, puste załączniki typu <tt>multipart</tt> są usuwane.\n"
+"  Jeżeli po filtrowaniu cała wiadomość stanie się pusta, również zostanie usunięta.\n"
+"\n"
+"  <p>Potem każda z grup załączników typu <tt>multipart/alternative</tt> jest \n"
+"  zastępowana przez pierwszy niepusty element pozostały po filtrowaniu,\n"
+"  jeśli włączona jest opcja <a href=\"?VARHELP=contentfilter/collapse_alternatives\">collapse_alternatives</a>.\n"
+"\n"
+"  <p>Ostatecznie, pozostałe w wiadomości części <tt>text/html</tt>\n"
+"  mogą zostać przekształcone na <tt>text/plain</tt> jeśli jest ustawiona opcja\n"
+"  <a href=\"?VARHELP=contentfilter/convert_html_to_plaintext\">convert_html_to_plaintext</a>\n"
+"  a serwer zezwala na takie przekształcenia."
 
 #: Mailman/Gui/ContentFilter.py:75
 msgid ""
@@ -4319,13 +4316,12 @@ msgid ""
 msgstr "Usuń załączniki, które nie pasują do następujących typów. Puste pole oznacza pominięcie tego etapu filtrowania."
 
 #: Mailman/Gui/ContentFilter.py:117
-#, fuzzy
 msgid ""
 "Should Mailman collapse multipart/alternative to its\n"
 "             first part content?"
 msgstr ""
-"Czy Mailman ma wysyłać auto-odpowiedzi do osób wysyłających \n"
-"             wiadomości na listę?"
+"Czy Mailman powinien przekształcać wiadomości typu multipart/alternative\n"
+"  do pierwszego z ich typów?"
 
 #: Mailman/Gui/ContentFilter.py:121
 msgid ""
@@ -4426,9 +4422,8 @@ msgid "When receiving digests, which format is default?"
 msgstr "Przy włączonym trybie paczek, który z formatów jest domyślny?"
 
 #: Mailman/Gui/Digest.py:59
-#, fuzzy
 msgid "How big in Kb should a digest be before it gets sent out?  0 implies no maximum size."
-msgstr "Ile kilobajtów powinna mieć paczka zanim zostanie wysłana?"
+msgstr "Ile kilobajtów powinna mieć paczka zanim zostanie wysłana? 0 oznacza brak maksymalnego rozmiaru."
 
 #: Mailman/Gui/Digest.py:63
 msgid "Should a digest be dispatched daily when the size threshold isn't reached?"
@@ -4752,9 +4747,8 @@ msgid "Munge From"
 msgstr ""
 
 #: Mailman/Gui/General.py:158 Mailman/Gui/Privacy.py:253
-#, fuzzy
 msgid "Wrap Message"
-msgstr "Wiadomość oryginalna"
+msgstr "Opakuj wiadomość"
 
 #: Mailman/Gui/General.py:159
 msgid ""
@@ -4870,7 +4864,6 @@ msgstr ""
 "<tt>Nadawca</tt> jest <em>zalecany</em> dla większości list."
 
 #: Mailman/Gui/General.py:242
-#, fuzzy
 msgid ""
 "This option controls what Mailman does to the\n"
 "             <tt>Reply-To:</tt> header in messages flowing through this\n"
@@ -4903,44 +4896,37 @@ msgid ""
 "             <tt>Reply-To:</tt> address below to point to the parallel\n"
 "             list."
 msgstr ""
-"Ta opcja określa działanie Mailman'a odnośnie nagłówków <tt>Reply-To:</tt>\n"
-"(<tt>Odpowiedz-Do:</tt>) we wiadomościach przechodzących przez tę listę.\n"
-"Jeśli wybrano opcję <em>Nadawca</em>, Mailman nie dodaje,\n"
-"ani też nie zmienia istniejącego nagłówka <tt>Reply-To:</tt>.\n"
-"Ustawienie tej opcji na <em>Ta lista</em> lub <em>Wybrany adres</em>\n"
-"powoduje, że Mailman ustawia określony nagłówek <tt>Reply-To:</tt>\n"
-"we wszystkich wiadomościach, nadpisując oryginalną zawartość w razie\n"
-"konieczności (<em>Wybrany adres</em> wstawia zawartość pola\n"
-"<a href=\"?VARHELP=general/reply_to_address\">reply_to_address</a>).\n"
+"Ta opcja określa działanie Mailmana odnośnie nagłówków <tt>Reply-To:</tt>\n"
+"  w wiadomościach przechodzących przez tę listę. Jeśli wybrano opcję <em>Nadawca</em>,\n"
+"  Mailman nie dodaje ani nie zmienia istniejącego nagłówka <tt>Reply-To:</tt>.\n"
+"  Ustawienie tej opcji na <em>Ta lista</em> lub <em>Wybrany adres</em>\n"
+"  powoduje, że Mailman ustawia określony nagłówek <tt>Reply-To:</tt>\n"
+"  we wszystkich wiadomościach, nadpisując oryginalną zawartość w razie\n"
+"  konieczności (<em>Wybrany adres</em> wstawia zawartość pola\n"
+"  <a href=\"?VARHELP=general/reply_to_address\">reply_to_address</a>).\n"
 "\n"
 "<p>Istnieje wiele powodów, dla których nie należy wprowadzać lub zmieniać\n"
-"nagłówka <tt>Reply-To:</tt>. Jednym z nich jest fakt, że dla niektórych\n"
-"subskrybentów jest to\n"
-"jedyna możliwość wprowadzenia właściwego adresu zwrotnego.\n"
-"Innym powodem jest to, że zmodyfikowany nagłówek może utrudnić wysyłanie\n"
-"prywatnych odpowiedzi do nadawcy. Odwiedź stronę\n"
-"<a href=\"http://www.unicom.com/pw/reply-to-harmful.html\">`Reply-To'\n"
-"Munging Considered Harmful</a> aby przeczytać bardziej szczegółowe\n"
-"omówienie tego problemu. Z kolei w artykule\n"
-"<a href=\"http://www.metasystema.org/essays/reply-to-useful.mhtml\">Reply-To\n"
-"Munging Considered Useful</a> przedstawiono przeciwny pogląd.\n"
+"  nagłówka <tt>Reply-To:</tt>. Jednym z nich jest fakt, że dla niektórych\n"
+"  subskrybentów jest to jedyna możliwość wprowadzenia właściwego adresu zwrotnego.\n"
+"  Innym powodem jest to, że zmodyfikowany nagłówek może utrudnić wysyłanie\n"
+"  prywatnych odpowiedzi do nadawcy. Odwiedź stronę\n"
+"  <a href=\"http://www.unicom.com/pw/reply-to-harmful.html\">Reply-To Munging Considered Harmful</a>,\n"
+"  aby przeczytać szczegółowe omówienie tego problemu. Z kolei w artykule\n"
+"  <a href=\"http://www.metasystema.org/essays/reply-to-useful.mhtml\">Reply-To Munging Considered Useful</a>\n"
+"  przedstawiono przeciwny pogląd.\n"
 "\n"
 "<p>Niektóre listy mają ograniczony przywilej wysyłania\n"
-"wiadomości, a właściwa dyskusja toczy się na równoległej\n"
-"liście do tego przeznaczonej. Dla przykładu są to listy z &quot;poprawkami\n"
-"do programów&quot; (&quot;patches&quot;) lub z &quot;informacjami o zmianach\n"
-"w projekcie&quot; (&quot;checkins&quot;), na które wiadomości są wysyłane\n"
-"przez system kontroli wersji, a dyskusja o zmianach toczy się na liście\n"
-"programistów. Aby obsłużyć ten rodzaj listy, zaznacz\n"
-"<em>Wybrany adres</em> i ustaw nagłówek <tt>Reply-To:</tt> aby wskazywał\n"
-"równoległą listę."
+"  wiadomości, a właściwa dyskusja toczy się na równoległej liście do tego przeznaczonej.\n"
+"  Dla przykładu są to listy z poprawkami do programów lub z informacjami o zmianach,\n"
+"  na które wiadomości są wysyłane przez system kontroli wersji, a dyskusja o zmianach toczy się na liście programistów.\n"
+"  Aby obsłużyć ten rodzaj listy, zaznacz <em>Wybrany adres</em> i ustaw nagłówek <tt>Reply-To:</tt>,\n"
+"  aby wskazywał równoległą listę."
 
 #: Mailman/Gui/General.py:274
 msgid "Explicit <tt>Reply-To:</tt> header."
 msgstr "Wybrany adres w nagłówku <tt>Reply-To:</tt>."
 
 #: Mailman/Gui/General.py:276
-#, fuzzy
 msgid ""
 "This is the address set in the <tt>Reply-To:</tt> header\n"
 "             when the <a\n"
@@ -4971,35 +4957,27 @@ msgid ""
 "             <p>Note that if the original message contains a\n"
 "             <tt>Reply-To:</tt> header, it will not be changed."
 msgstr ""
-"Jest to adres wprowadzany do nagłówka <tt>Reply-To:</tt>\n"
-"(<tt>Odpowiedz-Do:</tt>), gdy opcja\n"
-"<a href=\"?VARHELP=general/reply_goes_to_list\">reply_goes_to_list</a>\n"
-"jest ustawiona na <em>Wybrany adres</em>.\n"
+"Jest to adres wprowadzany do nagłówka <tt>Reply-To:</tt>,\n"
+"  gdy opcja <a href=\"?VARHELP=general/reply_goes_to_list\">reply_goes_to_list</a>\n"
+"  jest ustawiona na <em>Wybrany adres</em>.\n"
 "\n"
-"<p>Istnieje wiele powodów, dla których nie należy wprowadzać lub zmieniać\n"
-"nagłówka <tt>Reply-To:</tt>. Jednym z nich jest fakt, że dla niektórych\n"
-"prenumeratorów jest to\n"
-"jedyna możliwość wprowadzenia właściwego adresu zwrotnego.\n"
-"Innym powodem jest to, że zmodyfikowany nagłówek może utrudnić wysyłanie\n"
-"prywatnych odpowiedzi do nadawcy. Odwiedź stronę\n"
-"<a href=\"http://www.unicom.com/pw/reply-to-harmful.html\">`Reply-To'\n"
-"Munging Considered Harmful</a> aby przeczytać bardziej szczegółowe\n"
-"omówienie tego problemu. Z kolei w artykule\n"
-"<a href=\"http://www.metasystema.org/essays/reply-to-useful.mhtml\">Reply-To\n"
-"Munging Considered Useful</a> przedstawiono przeciwny pogląd.\n"
+"  <p>Istnieje wiele powodów, dla których nie należy wprowadzać lub zmieniać\n"
+"  nagłówka <tt>Reply-To:</tt>. Jednym z nich jest fakt, że dla niektórych\n"
+"  prenumeratorów jest to jedyna możliwość wprowadzenia właściwego adresu zwrotnego.\n"
+"  Innym powodem jest to, że zmodyfikowany nagłówek może utrudnić wysyłanie\n"
+"  prywatnych odpowiedzi do nadawcy. Odwiedź stronę\n"
+"  <a href=\"http://www.unicom.com/pw/reply-to-harmful.html\">Reply-To Munging Considered Harmful</a>,\n"
+"  aby przeczytać bardziej szczegółowe omówienie tego problemu. Z kolei w artykule\n"
+"  <a href=\"http://www.metasystema.org/essays/reply-to-useful.mhtml\">Reply-To Munging Considered Useful</a>\n"
+"  przedstawiono przeciwny pogląd.\n"
 "\n"
-"<p>Niektóre listy mają ograniczony przywilej wysyłania\n"
-"wysyłania wiadomości, a właściwa dyskusja toczy się na równoległej\n"
-"liście do tego przeznaczonej. Dla przykładu są to listy z &quot;poprawkami\n"
-"do programów&quot; (&quot;patches&quot;) lub z &quot;informacjami o zmianach\n"
-"w projekcie&quot; (&quot;checkins&quot;), na które wiadomości są wysyłane\n"
-"przez system kontroli wersji, a dyskusja o zmianach toczy się na liście\n"
-"programistów. Aby obsłużyć ten rodzaj listy, wprowadź\n"
-"w tym polu zawartość nagłówka <tt>Reply-To:</tt>.\n"
-"Musisz też zaznaczyć <em>Wybrany adres</em> we wcześniejszej opcji\n"
+"  <p>Niektóre listy mają ograniczenia w przyjmowaniu wiadomości, a właściwa dyskusja toczy się na równoległej\n"
+"  liście do tego przeznaczonej. Dla przykładu są to listy z poprawkami do programów lub z informacjami o zmianach w projekcie,\n"
+"  na które wiadomości są wysyłane przez system kontroli wersji, a dyskusja o zmianach toczy się na liście programistów.\n"
+"  Aby obsłużyć ten rodzaj listy, wprowadź w tym polu zawartość nagłówka <tt>Reply-To:</tt>.\n"
+"  Musisz także zaznaczyć <em>Wybrany adres</em> we wcześniejszej opcji.\n"
 "\n"
-"<p>Zauważ, że jeśli oryginalna wiadomość zawiera nagłówek\n"
-"<tt>Reply-To:</tt>, to nie zostanie on zmodyfikowany."
+"  <p>Jeśli oryginalna wiadomość zawiera nagłówek <tt>Reply-To:</tt>, to nie zostanie on zmodyfikowany."
 
 #: Mailman/Gui/General.py:305
 msgid "Umbrella list settings"
@@ -5316,12 +5294,14 @@ msgstr ""
 "<tt>List-*:</tt>. )"
 
 #: Mailman/Gui/General.py:489
-#, fuzzy
 msgid ""
 "Should the <tt>Sender</tt> header be rewritten for this\n"
 "                 mailing list to avoid stray bounces?  <em>Yes</em> is\n"
 "                 recommended."
-msgstr "Czy Mailman powinien wysyłać opiekunowi listy powiadomienia  o nierozpoznanych zwrotach? Odpowiedź <em>Tak</em> jest zalecana."
+msgstr ""
+"Czy nagłówek <tt>Sender</tt> powinien być nadpisywany,\n"
+"  aby uniknąć nierozpoznanych zwrotów?\n"
+"  <em>Tak</em> jest zalecane."
 
 #: Mailman/Gui/General.py:493
 msgid ""
@@ -5370,14 +5350,12 @@ msgid ""
 msgstr ""
 
 #: Mailman/Gui/General.py:560
-#, fuzzy
 msgid ""
 "<b>admin_member_chunksize</b> attribute not\n"
 "            changed!  It must be an integer > 0."
 msgstr ""
-"<p>Atrybut <b>real_name</b> nie\n"
-"                    został zmieniony! Może się on różnić od nazwy listy\n"
-"                    jedynie wielkością liter."
+"Atrybut <b>admin_member_chunksize</b> nie został zmieniony\n"
+"Przyjmuje on jedynie wartości liczb całkowitych większych od zera."
 
 #: Mailman/Gui/General.py:570
 msgid ""
@@ -5936,9 +5914,8 @@ msgstr ""
 "             które dostarczają listy adresów spamerom."
 
 #: Mailman/Gui/Privacy.py:172
-#, fuzzy
 msgid "/Quarantine"
-msgstr "Kwartalnie"
+msgstr "/Kwarantanna"
 
 #: Mailman/Gui/Privacy.py:176
 msgid ""
@@ -6077,14 +6054,14 @@ msgid ""
 msgstr "Tekst, który zostanie dołączony do każdego  <a href=\"?VARHELP/privacy/sender/member_moderation_action\">powiadomienia o odrzuceniu</a> wiadomości od moderowanego subskrybenta listy."
 
 #: Mailman/Gui/Privacy.py:255
-#, fuzzy
 msgid ""
 "Action to take when anyone posts to the\n"
 "             list from a domain with a DMARC Reject%(quarantine)s Policy."
-msgstr "Co zrobić z wiadomościami wysłanymi z moderowanego adresu."
+msgstr ""
+"Co zrobić z wiadomościami wysłanymi z adresu\n"
+"w domenie z polityką DMARC Reject%(quarantine)s."
 
 #: Mailman/Gui/Privacy.py:258
-#, fuzzy
 msgid ""
 "<ul><li><b>Munge From</b> -- applies the <a\n"
 "             href=\"?VARHELP=general/from_is_list\">from_is_list Munge From</a>\n"
@@ -6109,14 +6086,20 @@ msgid ""
 "             if the message is From: an affected domain and the setting is\n"
 "             other than Accept."
 msgstr ""
-"<ul><li><b>Wstrzymaj</b> -- wstrzymuje wiadomość do akceptacji \n"
-"  moderatora listy.\n"
-"<p><li><b>Odmów</b> -- powoduje automatyczne odrzucenie wiadomości i powiadomienie\n"
-" o tym autora. Tekst powiadomienia o odrzuceniu można \n"
-"<a href=\"?VARHELP=privacy/sender/member_moderation_notice\">\n"
-"zmienić tutaj</a>.\n"
-"<p><li><b>Zignoruj</b> -- zignoruj wiadomość, bez powiadamiania autora. \n"
-"</ul>"
+"<ul><li><b>Munge From</b> -- przekształca według\n"
+"  <a href=\"?VARHELP=general/from_is_list\">from_is_list Munge From</a>.\n"
+"\n"
+"  <p><li><b>Wrap Message</b> -- przekształca według\n"
+"  <a href=\"?VARHELP=general/from_is_list\">from_is_list Wrap Message</a>.\n"
+"\n"
+"  <p><li><b>Odrzuć</b> -- automatycznie odrzuca wiadomości, wysyłając informację zwrotną do autora.\n"
+"  Jej treść <a href=\"?VARHELP=privacy/sender/dmarc_moderation_notice\">można określić</a>.\n"
+"\n"
+"  <p><li><b>Zignoruj</b> -- wiadomość jest odrzucana bez powiadamiania o tym jej autora.\n"
+"</ul>\n"
+"\n"
+"  <p>To ustawienie ma pierwszeństwo przed <a href=\"?VARHELP=general/from_is_list\">from_is_list</a>\n"
+"  jeśli wiadomość pochodzi od adresu z dotkniętej domeny a ustawiono cokolwiek innego niż „Akceptuj”."
 
 #: Mailman/Gui/Privacy.py:283
 msgid ""
@@ -6140,14 +6123,16 @@ msgid ""
 msgstr ""
 
 #: Mailman/Gui/Privacy.py:299
-#, fuzzy
 msgid ""
 "Text to include in any\n"
 "             <a href=\"?VARHELP=privacy/sender/dmarc_moderation_action\"\n"
 "             >rejection notice</a> to\n"
 "             be sent to anyone who posts to this list from a domain\n"
 "             with a DMARC Reject%(quarantine)s Policy."
-msgstr "Tekst, który zostanie dołączony do każdego  <a href=\"?VARHELP/privacy/sender/member_moderation_action\">powiadomienia o odrzuceniu</a> wiadomości od moderowanego subskrybenta listy."
+msgstr ""
+"Tekst, który zostanie dołączony do każdego\n"
+"  <a href=\"?VARHELP/privacy/sender/member_moderation_action\">powiadomienia o odrzuceniu</a> wiadomości\n"
+"  od nadawcy z domeny o polityce DMARC Reject%(quarantine)s."
 
 #: Mailman/Gui/Privacy.py:306
 msgid ""
@@ -6213,7 +6198,6 @@ msgstr ""
 "             automatycznie akceptowane."
 
 #: Mailman/Gui/Privacy.py:356
-#, fuzzy
 msgid ""
 "Postings from any of these non-members will be automatically\n"
 "             accepted with no further moderation applied.  Add member\n"
@@ -6223,11 +6207,12 @@ msgid ""
 "             Mailman list in this installation, all of whose member\n"
 "             addresses will be accepted for this list."
 msgstr ""
-"Listy wysłane przez osoby nie będące prenumeratorami\n"
-"             będą automatycznie akceptowane bez \n"
-"             moderacji. Umieszczaj po jednym adresie w linii; \n"
-"             rozpocznij linię od znaku ^ , żeby wprowadzić wyrażenie \n"
-"             regularne."
+"Listy wysłane przez te osoby (nie będące prenumeratorami)\n"
+"  będą automatycznie akceptowane bez moderacji.\n"
+"  Umieszczaj po jednym adresie w linii; \n"
+"  rozpocznij linię od znaku ^, aby wprowadzić wyrażenie regularne.\n"
+"  Linia zawierająca znak @ z następującą po nim nazwą listy, określa inną\n"
+"  listę Mailmana tej instalacji, której subskrybenci będą mogli wysyłać na tę listę."
 
 #: Mailman/Gui/Privacy.py:365
 msgid ""
@@ -7318,7 +7303,6 @@ msgid "The Mailman Replybot"
 msgstr "Automat Mailman"
 
 #: Mailman/Handlers/Scrubber.py:205
-#, fuzzy
 msgid ""
 "An embedded and charset-unspecified text was scrubbed...\n"
 "Name: %(filename)s\n"
@@ -7353,7 +7337,6 @@ msgid "unknown sender"
 msgstr "nieznany nadawca"
 
 #: Mailman/Handlers/Scrubber.py:273
-#, fuzzy
 msgid ""
 "An embedded message was scrubbed...\n"
 "From: %(who)s\n"
@@ -7362,15 +7345,14 @@ msgid ""
 "Size: %(size)s\n"
 "URL: %(url)s\n"
 msgstr ""
-"Załączona wiadomość została usunięta...\n"
-"From: %(who)s\n"
-"Subject: %(subject)s\n"
-"Date: %(date)s\n"
-"Size: %(size)s\n"
-"Url: %(url)s\n"
+"Załączona wiadomość została usunięta…\n"
+"Nadawca: %(who)s\n"
+"Temat: %(subject)s\n"
+"Data: %(date)s\n"
+"Rozmiar: %(size)s\n"
+"Adres: %(url)s\n"
 
 #: Mailman/Handlers/Scrubber.py:305
-#, fuzzy
 msgid ""
 "A non-text attachment was scrubbed...\n"
 "Name: %(filename)s\n"
@@ -7379,12 +7361,12 @@ msgid ""
 "Desc: %(desc)s\n"
 "URL: %(url)s\n"
 msgstr ""
-"Załącznik wiadomości został usunięty...\n"
-"Name: %(filename)s\n"
-"Type: %(ctype)s\n"
-"Size: %(size)d bytes\n"
-"Desc: %(desc)s\n"
-"Url : %(url)s\n"
+"Binarny załącznik wiadomości został usunięty…\n"
+"Nazwa: %(filename)s\n"
+"Typ: %(ctype)s\n"
+"Rozmiar: %(size)d bytes\n"
+"Opis: %(desc)s\n"
+"Adres: %(url)s\n"
 
 #: Mailman/Handlers/Scrubber.py:344
 msgid "Skipped content of type %(partctype)s\n"
@@ -7399,17 +7381,16 @@ msgid "The message headers matched a filter rule"
 msgstr "Nagłówek wiadomości pasuje do reguł filtra"
 
 #: Mailman/Handlers/SpamDetect.py:109
-#, fuzzy
 msgid ""
 "You are not allowed to post to this mailing list From: a domain which\n"
 "publishes a DMARC policy of reject or quarantine, and your message has been\n"
 "automatically rejected.  If you think that your messages are being rejected in\n"
 "error, contact the mailing list owner at %(listowner)s."
 msgstr ""
-"Nie masz uprawnień pozwalających na wysyłanie wiadomości na tę listę \n"
-"Twoje wiadomości są automatycznie odrzucane. \n"
-"Skontaktuj się z opiekunen \n"
-"listy pod adresem %(listowner)s."
+"Wysyłanie wiadomości na tę listę z adresów w domenach publikujących\n"
+"  politykę DMARC odrzucania lub poddawania kawrantannie jest niedozowlone.\n"
+"  Twoja wiadomość została automatycznie odrzucona.\n"
+"  Jeżeli sądzisz, że to błąd, skontaktuj się z opiekunem listy pod adresem %(listowner)s."
 
 #: Mailman/Handlers/SpamDetect.py:154
 msgid "Message rejected by filter rule match"
@@ -7583,7 +7564,6 @@ msgid "%(dbfile)s owned by %(owner)s (must be owned by %(user)s"
 msgstr "%(owner)s jest właścicielem pliku %(dbfile)s (a musi być %(user)s)"
 
 #: Mailman/MTA/Postfix.py:372
-#, fuzzy
 msgid "%(dbfile)s permissions must be 066x (got %(octmode)s)"
 msgstr "prawa dostępu do pliku %(dbfile)s powinny być ustawione na 066x (są %(octmode)s)"
 
@@ -7719,7 +7699,7 @@ msgstr "Wysłane przez program Mailman<br>, (wersja %(version)s)"
 
 #: Mailman/htmlformat.py:660
 msgid "Python Powered"
-msgstr ""
+msgstr "Obsługiwane przez Pythona"
 
 #: Mailman/htmlformat.py:661
 msgid "Gnu's Not Unix"
@@ -8099,7 +8079,7 @@ msgstr "Lista:"
 
 #: bin/check_db:148
 msgid "   %(file)s: okay"
-msgstr ""
+msgstr "   %(file)s: OK"
 
 #: bin/check_perms:20
 msgid ""
@@ -8601,7 +8581,6 @@ msgid "Unexpected arguments"
 msgstr "Nieoczekiwane argumenty"
 
 #: bin/export.py:351
-#, fuzzy
 msgid "Invalid password scheme"
 msgstr "Błędny schemat hasła"
 
@@ -8688,9 +8667,8 @@ msgid ""
 msgstr ""
 
 #: bin/fix_url.py:75
-#, fuzzy
 msgid "Locking list"
-msgstr "Zapisywanie listy"
+msgstr "Blokowanie listy"
 
 #: bin/fix_url.py:85
 msgid "Setting web_page_url to: %(web_page_url)s"
@@ -9496,9 +9474,8 @@ msgid "stale lock file"
 msgstr ""
 
 #: bin/rmlist:141
-#, fuzzy
 msgid "held message file"
-msgstr "wszystkie wstrzymane wiadomości."
+msgstr "plik wstrzymanych wiadomości"
 
 #: bin/rmlist:146 bin/rmlist:148
 msgid "private archives"
