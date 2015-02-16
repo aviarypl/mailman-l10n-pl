@@ -1,4 +1,4 @@
-Lista `%(listname)s' została utworzona. Oto podstawowe informacje 
+Lista „%(listname)s” została utworzona. Oto podstawowe informacje 
 o liście.
 
 Hasło zabezpieczające dostęp do ustawień administracyjnych:
@@ -20,7 +20,7 @@ Tę stronę można dostosować z poziomu interfejsu administracyjnego.
 Jednakże, w tym celu potrzebna będzie znajomość składni HTML.
 
 Użytkownicy mogą zarządzać swoją prenumeratą za pomocą poleceń wysyłanych
-emailem. Napisz na poniższy adres umieszczając słowo 'help' w temacie 
+emailem. Napisz na poniższy adres umieszczając słowo „help” w temacie 
 lub treści wiadomości.
 
     %(requestaddr)s

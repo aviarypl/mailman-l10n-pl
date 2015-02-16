@@ -5,11 +5,11 @@ Zapisanie lub wypisanie się przez stronę WWW:
 	%(got_listinfo_url)s
 
 Zapisywanie lub wypisanie się przez email 
-(wyslij wiadomość ze słowem 'help' na adres):
+(wyslij wiadomość ze słowem „help” na adres):
 	%(got_request_email)s
 
 Opiekun listy:
 	%(got_owner_email)s
 
 Odpowiadając na tę wiadomość, zmień jej tytuł na inny 
-niż "Re: Paczka %(real_name)s...".
+niż „Re: Paczka %(real_name)s...”.

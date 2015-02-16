@@ -5,7 +5,7 @@ Twoja prośba wysłana na adres %(requestaddr)s:
 została przekazana osobie opiekującej się listą.
 
 Stało się tak najprawdopodobniej dlatego, że próbujesz zapisać się
-na 'zamkniętą' listę.
+na „zamkniętą” listę.
 
 Wkrótce otrzymasz wiadomość informującą o decyzji administratora 
 odnośnie Twojej prośby.

@@ -1,4 +1,4 @@
-Otrzymaliśmy prośbę o przypomnienie hasła dostępu do ustawień subskrypcji 
+Otrzymaliśmy prośbę o przypomnienie hasła dostępu do ustawień subskrypcji
 listy %(fqdn_lname)s. Hasło to jest potrzebne do zalogowania się.
 Hasło będzie również przydatne do wypisania się z tej listy.
 
@@ -15,8 +15,8 @@ na adres:
 
     %(requestaddr)s
 
-ze słowem "help" w tytule lub treści.  W odpowiedzi dostaniesz
-wiadomość z dalszymi wskazówkami.
+ze słowem „help” w tytule lub treści. W odpowiedzi dostaniesz wiadomość
+z dalszymi wskazówkami.
 
-Pytania i komentarze proszę wysyłać do administratora listy 
+Pytania i komentarze proszę wysyłać do administratora listy
 %(listname)s na adres %(owneraddr)s.

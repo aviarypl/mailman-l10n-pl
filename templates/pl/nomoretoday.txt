@@ -1,4 +1,4 @@
-Z adresu '%(sender)s' otrzymano prośbę o automatyczną odpowiedź dotyczącą
+Z adresu „%(sender)s” otrzymano prośbę o automatyczną odpowiedź dotyczącą
 listy %(listname)s. Dzisiaj otrzymano już %(num)s takich
 wiadomości z tego samego adresu. W celu uniknięcia problemów takich jak
 pętle między dwoma automatami, wysyłanie automatycznych odpowiedzi zostało 

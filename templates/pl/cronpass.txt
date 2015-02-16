@@ -11,7 +11,7 @@ albo chwilowo wstrzymać wysyłanie listów na Twój adres
 
 Jeśli nie masz dostępu do WWW, większość zmian w subskrybcji może być 
 dokonywana za pośrednictwem emaila. Wyślij wiadomość na adres
-'-request' swojej listy (np. %(exreq)s) ze słowem 'help' w treści, 
+„-request” swojej listy (np. %(exreq)s) ze słowem „help” w treści, 
 w odpowiedzi otrzymasz emaila z dalszymi wskazówkami.
 
 Wszystkie pytania, problemy i komentarze proszę kierować do opiekuna

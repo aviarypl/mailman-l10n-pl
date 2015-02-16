@@ -8,15 +8,14 @@ Ogólną stronę informacyjną listy znajdziesz pod adresem:
 
   %(listinfo_url)s
 
-Gdybyś kiedykolwiek chciał się wypisać lub zmienić opcje
-swojej subskrypcji (np. tryb lub hasło), możesz to zrobić 
-na stronie:
+Wypisać się z listy lub zmienić opcje swojej subskrypcji
+(np. tryb lub hasło) można na stronie:
 
   %(optionsurl)s
 %(umbrella)s
-Zarządzenie prenumeratą lub wypisanie się jest możliwe, również jeśli 
+Zarządzenie prenumeratą lub wypisanie się jest możliwe, również jeśli
 nie masz dostępu do sieci WWW. W takim przypadku wyślij wiadomość
-za słowem 'help' w temacie lub treści na adres:
+za słowem „help” w temacie lub treści na adres:
 
   %(real_name)s-request@%(host_name)s
 
@@ -28,10 +27,9 @@ będzie Twoje hasło. Brzmi ono:
   %(password)s
 
 Mailman będzie co miesiąc przysyłał Ci wiadomość przypominającą o tym,
-na jakie listy na serwerze  %(host_name)s jesteś zapisany i
+na jakie listy na serwerze %(host_name)s jesteś zapisany i
 jakie jest Twoje hasło. Można zrezygnować z przypomnień zmieniając
 opcje subskrypcji. Przypomnienie zawierać będzie również instrukcje, w
-jaki sposób wypisać się z listy i korzystać z Mailmana. Wchodząc na   
+jaki sposób wypisać się z listy i korzystać z Mailmana. Wchodząc na
 stronę swojej subskrypcji możesz w każdej chwili poprosić o
-przesłanie hasła emailem. 
-
+przesłanie hasła emailem.

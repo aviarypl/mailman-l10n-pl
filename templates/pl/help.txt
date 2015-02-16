@@ -1,13 +1,12 @@
 Pomoc dla listy %(listname)s:
 
-To jest wynik komendy mailowej 'help' wygenerowany przez system zarządzania
-listami "Mailman" w wersji  %(version)s. Poniżej znajdziesz polecenia, 
+To jest wynik komendy mailowej „help” wygenerowany przez system zarządzania
+listami „Mailman” w wersji %(version)s. Poniżej znajdziesz polecenia, 
 którymi można komunikować się z Mailmanem drogą poczty elektronicznej. 
 Można w ten sposób zmieniać parametry swojej subskrypcji.
 Polecenie można umieścić zarówno w temacie, jak i treści wiadomości.
 
-Wszystkie te działania można również zrealizować za pośrednictwem 
-sieci WWW, na stronie:
+Wszystkie te działania można również zrealizować za pośrednictwem strony:
 
     %(listinfo_url)s
 
@@ -16,12 +15,11 @@ hasła zabezpieczającego dostęp do ustawień prenumeraty.
 
 Polecenia dotyczące konkretnej listy (np. subscribe, who) należy wysyłać
 na adres *-request danej listy. Na przykład polecenia dotyczące listy 
-'mailman' należy wysyłać na adres 
-'mailman-request@...'.
+„mailman” należy wysyłać na adres „mailman-request@...”.
 
-Legenda: słowa w nawiasach "<>" oznaczają WYMAGANE opcje, a 
-nawiasy "[]" informują, że dane pole jest OPCJONALNE. W poleceniach nie 
-należy stosować nawiasów "<>", czy "[]".
+Legenda: słowa w nawiasach „<>” oznaczają WYMAGANE opcje, a 
+nawiasy „[]” informują, że dane pole jest OPCJONALNE. W poleceniach nie 
+należy stosować nawiasów „<>”, czy „[]”.
 
 Lista dopuszczalnych poleceń:
 

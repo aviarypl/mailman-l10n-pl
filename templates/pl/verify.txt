@@ -1,8 +1,8 @@
 Prośba o potwierdzenie zapisania się na listę %(listname)s.
 
-Otrzymano prośbę%(remote)s o zapisanie %(email)s na listę %(listaddr)s. 
-Żeby potwierdzić prenumeratę, odpowiedz na tę wiadomość nie zmieniając 
-jej Tematu. Prenumeratę możesz również potwierdzić klikając poniższy 
+Otrzymano prośbę%(remote)s o zapisanie %(email)s na listę %(listaddr)s.
+Żeby potwierdzić prenumeratę, odpowiedz na tę wiadomość nie zmieniając
+jej tematu. Prenumeratę możesz również potwierdzić klikając poniższy
 odnośnik:
 
     %(confirmurl)s
@@ -13,9 +13,9 @@ zawierała tylko jedną linię:
     confirm %(cookie)s
 
 Wysłanie zwykłej odpowiedzi powinno zadziałać w większości programów
-pocztowych, pod warunkiem, że nie zmieniają one pola 
-Subject: (dodanie "Re:" jest akceptowalne). 
- 
+pocztowych, pod warunkiem, że nie zmieniają one pola „Subject:”
+(dodanie „Re:” jest akceptowalne).
+
 Jeśli nie chciałeś zapisać się, po prostu zignoruj tą wiadomość.
 
 W przypadku jakichkolwiek pytań lub wątpliwości, skontaktuj się z

@@ -1,60 +1,52 @@
 <html>
-<head>
-    <title>%(realname)s Private Archives Authentication</title>
-<script>function sf(){document.f.username.focus();}</script>
-</head>
-<body bgcolor="#ffffff" onLoad="sf()">
-<FORM METHOD=POST ACTION="%(action)s" name="f">
+ <head>
+  <title>Prywatne archiwum listy %(realname)s - uwierzytelnianie</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <script>function sf(){document.f.username.focus();}</script>
+ </head>
+ <body bgcolor="#ffffff" onLoad="sf()">
+  <form method=POST action="%(action)s" name="f">
 %(message)s
-  <TABLE WIDTH="100%%" BORDER="0" CELLSPACING="4" CELLPADDING="5">
-    <TR>
-      <TD COLSPAN="2" WIDTH="100%%" BGCOLOR="#99CCFF" ALIGN="CENTER">
-	<B><FONT COLOR="#000000" SIZE="+1">%(realname)s Private
-	    Archives Authentication</FONT></B>
-      </TD>
-    </TR>
+   <table width="100%%" border="0" cellspacing="4" cellpadding="5">
     <tr>
-        <TD><div ALIGN="Right">Email address:</div></TD>
-        <TD><INPUT TYPE="text" NAME="username" SIZE="30"></TD>
+     <td colspan="2" width="100%%" bgcolor="#99CCFF" align="center">
+      <b><font color="#000000" size="+1">Prywatne archiwum listy %(realname)s - uwierzytelnianie</font></b>
+     </td>
     </tr>
     <tr>
-      <TD><div ALIGN="Right">Password:</div></TD>
-      <TD><INPUT TYPE="password" NAME="password" SIZE="30"></TD>
+     <td><div align="Right">Adres e-mail:</div></td>
+     <td><input type="text" name="username" size="30"></td>
     </tr>
     <tr>
-      <td colspan=2 align="middle"><INPUT type="SUBMIT"
-                                          name="submit"
-					  value="Let me in...">
-      </td>
+     <td><div align="Right">Hasło:</div></td>
+     <td><input type="password" name="password" size="30"></td>
     </tr>
-  </TABLE>
-      <p><strong><em>Important:</em></strong> From this point on, you
-      must have cookies enabled in your browser, otherwise no
-      administrative changes will take effect.
+    <tr>
+     <td colspan=2 align="middle"><INPUT type="submit" name="submit" value="Zaloguj"></td>
+    </tr>
+   </table>
+   <p><strong><em>Ważne</em></strong>:
+    Od tego momentu, ciasteczka w przeglądarce muszą być włączone.
+    W przeciwnym wypadku żadne zmiany administracyjne nie zostaną zastosowane.
 
-      <p>Session cookies are used in Mailman's
-      administrative interface so that you don't need to
-      re-authenticate with every administrative operation.  This
-      cookie will expire automatically when you exit your browser, or
-      you can explicitly expire the cookie by hitting the
-      <em>Logout</em> link under <em>Other Administrative
-      Activities</em> (which you'll see once you successfully log in).
-      <p>
-    <TABLE WIDTH="100%%" BORDER="0" CELLSPACING="4" CELLPADDING="5">
-    <TR>
-      <TD COLSPAN="2" WIDTH="100%%" BGCOLOR="#99CCFF" ALIGN="CENTER">
-	<B><FONT COLOR="#000000" SIZE="+1">Password Reminder</FONT></B>
-      </TD>
-    </TR>
+   <p>Ciasteczka sesji są używane przez interfejs administracyjny Mailmana,
+    aby nie było potrzeby osobnego uwierzytelniania każdej operacji administracyjnej.
+    Ciasteczko automatycznie wygaśnie po zamknięciu (sesji) przeglądarki.
+    Można je również usunąć korzystając z odnośnika <em>Wyloguj</em> w sekcji <em>Inne czynności administracyjne</em>
+    (która zostanie wyświetlona po udanym zalogowaniu).
+   <p>
+   <table width="100%%" border="0" cellspacing="4" cellpadding="5">
     <tr>
-      <td>If you don't remember your password, enter your email address
-          above and click the <em>Remind</em> button and your
-          password will be emailed to you.</td>
+     <td colspan="2" width="100%%" bgcolor="#99CCFF" align="center"><b><font color="#000000" size="+1">Przypomnienie hasła</font></b></td>
     </tr>
     <tr>
-      <td><center><INPUT name="login-remind" type="SUBMIT" value="Remind" ></center></td>
+     <td>Jeśli nie pamiętasz hasła, wprowadź powyżej adres e-mail i kliknij przycisk <em>Przypomnij</em> a hasło zostanie wysłane.</td>
     </tr>
-  </TABLE>
-</FORM>
-</body>
+    <tr>
+     <td><center><INPUT name="login-remind" type="submit" value="Przypomnij" ></center></td>
+    </tr>
+   </table>
+  </form>
+ </body>
 </html>

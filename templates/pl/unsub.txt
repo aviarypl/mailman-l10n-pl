@@ -1,7 +1,7 @@
 Prośba o potwierdzenie wypisania się z listy %(listname)s.
 
-Otrzymano prośbę%(remote)s o wypisanie %(email)s z listy %(listaddr)s. 
-Żeby potwierdzić wypisanie się, proszę odpowiedzieć na tę wiadomość 
+Otrzymano prośbę%(remote)s o wypisanie %(email)s z listy %(listaddr)s.
+Żeby potwierdzić wypisanie się, proszę odpowiedzieć na tę wiadomość
 nie zmieniając jej Tematu.
 
 Wypisać możesz się również klikając poniższy odnośnik:
@@ -14,9 +14,9 @@ zawierała jedną linię:
     confirm %(cookie)s
 
 Wysłanie zwykłej odpowiedzi powinno zadziałać w większości programów
-pocztowych, pod warunkiem, że nie zmieniają one pola 
-Subject: (dodanie "Re:" jest akceptowalne). 
- 
+pocztowych, pod warunkiem, że nie zmieniają one pola „Subject:”
+(dodanie „Re:” jest akceptowalne).
+
 Jeśli nie chciałeś wypisać się z listy, po prostu zignoruj tę wiadomość.
 
 W przypadku jakichkolwiek pytań lub wątpliwości, skontaktuj się z
