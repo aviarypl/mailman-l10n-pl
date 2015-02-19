@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Mailman 2.1\n"
 "Report-Msgid-Bugs-To: https://github.com/aviarypl/mailman-l10n-pl/issues\n"
 "POT-Creation-Date: Tue Feb  3 20:49:32 2015\n"
-"PO-Revision-Date: 2015-02-16 23:06+0100\n"
+"PO-Revision-Date: 2015-02-19 15:40+0100\n"
 "Last-Translator: Stefan Plewako <splewako@aviary.pl>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -2706,7 +2706,7 @@ msgstr "Plik archiwum nie znaleziony"
 
 #: Mailman/Cgi/rmlist.py:65
 msgid "No such list %(safelistname)s"
-msgstr "Lista „%(listname)s” nie istnieje na tym serwerze"
+msgstr "Lista „%(safelistname)s” nie istnieje na tym serwerze"
 
 #: Mailman/Cgi/rmlist.py:83
 msgid "You're being a sneaky list owner!"
@@ -2742,7 +2742,7 @@ msgstr "Usuń listę <em>%(realname)s</em> (tej czynności nie można odwrócić
 
 #: Mailman/Cgi/rmlist.py:191
 msgid "Permanently remove mailing list %(realname)s"
-msgstr "Usuń listę %(realname) (tej czynności nie można odwrócić)"
+msgstr "Usuń listę %(realname)s (tej czynności nie można odwrócić)"
 
 #: Mailman/Cgi/rmlist.py:204
 msgid ""
