@@ -8,10 +8,10 @@ later they are ISO-8859-2 reencoded and imported to [Mailman 2.1](https://code.l
 
 
 ## Supported versions
-* 2.1.19
-* 2.1.20
-
-[Download l10n files](https://github.com/aviarypl/mailman-l10n-pl/releases)
+[Download l10n files](https://github.com/aviarypl/mailman-l10n-pl/releases) for:
+* [2.1.18](https://github.com/aviarypl/mailman-l10n-pl/releases/2.1.18)
+* [2.1.19](https://github.com/aviarypl/mailman-l10n-pl/releases/2.1.19)
+* [2.1.20](https://github.com/aviarypl/mailman-l10n-pl/releases/2.1.20)
 
 
 ## License
