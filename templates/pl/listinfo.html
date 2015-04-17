@@ -4,9 +4,68 @@
   <HEAD>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <TITLE>Strona informacyjna listy <MM-List-Name></TITLE>
-  
+    <link href="/icons/mozilla.css" rel="stylesheet" type="text/css" />
+    <link href="/icons/mozilla-16.png" rel="shortcut icon" type="image/png" />
+  <style type="text/css"><!--
+/* MetaWebPro font family licensed from fontshop.com. WOFF-FTW! */
+@font-face {
+  font-family: 'MetaBold';
+  src: url('//www.mozilla.org/img/fonts/MetaWebPro-Bold.eot');
+  src: local('¿'), url('//www.mozilla.org/img/fonts/MetaWebPro-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+#header #dino {
+  width: auto;
+}
+
+#header h1 {
+  background: transparent;
+  width: auto;
+  padding-top: 10px;
+  padding-left: 0.5em;
+}
+
+#header h1 a {
+  text-indent: 0;
+  background: transparent;
+  color: white;
+  width: auto;
+  font-family: MetaBold,Trebuchet MS,sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+#header h1 a:hover {
+    color: #EEEEEE;
+    text-decoration: none;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.main-content {
+  margin-right: 20px;
+}
+--></style>
   </HEAD>
   <BODY BGCOLOR="#ffffff">
+    <div id="utility">
+      <p><strong>Looking For</strong></p>
+      <ul>
+        <li><a href="http://www.mozilla.org/">mozilla.org</a></li>
+        <li><a href="https://wiki.mozilla.org/">Wiki</a></li>
+        <li><a href="https://developer.mozilla.org/">Developer Center</a></li>
+        <li><a href="http://www.firefox.com/">Firefox</a></li>
+        <li><a href="http://www.getthunderbird.com/">Thunderbird</a></li>
+      </ul>
+    </div>
+    <div id="header">
+      <div id="dino">
+        <h1><a href="/" title="Back to home page">mailman at mozilla</a></h1>
+      </div>
+    </div>
+    <div class="main-content">
 
     <P>
       <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="5">
@@ -35,7 +94,7 @@
 		<P><MM-List-Info></P>
                 <p> Zobacz <MM-Archive>archiwum listy <MM-List-Name>
                     </MM-Archive>.
-                
+
 	      <MM-Restricted-List-Message>
 	  </p>
 	</TD>
@@ -79,7 +138,7 @@
 	<TD WIDTH="12%">&nbsp;</TD></TR>
       <TR>
 
-        <TD COLSPAN="3"><FONT SIZE=-1>Wprowadź hasło. 
+        <TD COLSPAN="3"><FONT SIZE=-1>Wprowadź hasło.
          <b>Nie używaj hasła</b>, które wykorzystujesz np. do logowania do konta bankowego.
 
          <br><br>Jeżeli nie podasz hasła, system przydzieli Ci
@@ -88,18 +147,18 @@
 	    <MM-Reminder>
 	    </font>
 	</TD>
-      </TR>  
+      </TR>
       <TR>
 	<TD BGCOLOR="#dddddd">Hasło:</TD>
 	<TD><MM-New-Password-Box></TD>
 	<TD>&nbsp;</TD></TR>
-      <TR> 
+      <TR>
 	<TD BGCOLOR="#dddddd">Potwierdź hasło:</TD>
 	<TD><MM-Confirm-Password></TD>
 	<TD>&nbsp; </TD></TR>
       <tr>
         <TD BGCOLOR="#dddddd">W jakim języku chcesz komunikować się z
-         systemem?</TD> 
+         systemem?</TD>
         <TD> <MM-list-langs></TD>
         <TD>&nbsp; </TD></TR>
       <mm-digest-question-start>
@@ -140,5 +199,11 @@
     </tr>
   </table>
 <MM-Mailman-Footer>
+</div>
+  <div id="footer">
+    <div id="footer-content">
+      <p>View our <a href="http://www.mozilla.org/about/policies/privacy-policy.html">Privacy Policy</a>.</p>
+    </div>
+  </div>
 </BODY>
 </HTML>
