@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mailman 2.1\n"
 "Report-Msgid-Bugs-To: https://github.com/aviarypl/mailman-l10n-pl/issues\n"
-"POT-Creation-Date: 2016-02-15 15:14+0100\n"
-"PO-Revision-Date: 2016-02-15 17:11+0100\n"
+"POT-Creation-Date: 2016-09-02 18:25+0200\n"
+"PO-Revision-Date: 2016-09-02 18:25+0200\n"
 "Last-Translator: Stefan Plewako <splewako@aviary.pl>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: Mailman/Archiver/HyperArch.py:123
 msgid "size not available"
@@ -106,7 +106,7 @@ msgstr "Lipiec"
 msgid "June"
 msgstr "Czerwiec"
 
-#: Mailman/Archiver/HyperArch.py:926 Mailman/i18n.py:107
+#: Mailman/Archiver/HyperArch.py:926 Mailman/i18n.py:130
 msgid "May"
 msgstr "Maj"
 
@@ -227,7 +227,7 @@ msgid " The last bounce received from you was dated %(date)s"
 msgstr " Ostatni zwrot otrzymano z Twojego adresu dnia %(date)s"
 
 #: Mailman/Bouncer.py:329 Mailman/Deliverer.py:146
-#: Mailman/Handlers/Acknowledge.py:44 Mailman/Handlers/CookHeaders.py:401
+#: Mailman/Handlers/Acknowledge.py:44 Mailman/Handlers/CookHeaders.py:403
 #: Mailman/Handlers/Hold.py:215 Mailman/Handlers/ToDigest.py:240
 #: Mailman/ListAdmin.py:223
 msgid "(no subject)"
@@ -1050,7 +1050,7 @@ msgstr "Nieprawidłowy adres e-mail"
 msgid "Hostile address (illegal characters)"
 msgstr "Nieprawidłowy adres (niedopuszczalne znaki)"
 
-#: Mailman/Cgi/admin.py:1463 bin/add_members:149 bin/clone_member:136
+#: Mailman/Cgi/admin.py:1463 bin/add_members:150 bin/clone_member:136
 #: bin/sync_members:268
 msgid "Banned address (matched %(pattern)s)"
 msgstr "Adres na czarnej liście (pasuje do %(pattern)s)"
@@ -2025,15 +2025,15 @@ msgstr "Nie masz uprawnień do tworzenia nowych list"
 msgid "Unknown virtual host: %(safehostname)s"
 msgstr "Nieznany host wirtualny: %(safehostname)s"
 
-#: Mailman/Cgi/create.py:200 bin/newlist:218
+#: Mailman/Cgi/create.py:200 bin/newlist:219
 msgid "Bad owner email address: %(s)s"
 msgstr "Niepoprawny adres administratora listy: %(s)s"
 
-#: Mailman/Cgi/create.py:205 bin/newlist:181 bin/newlist:222
+#: Mailman/Cgi/create.py:205 bin/newlist:182 bin/newlist:223
 msgid "List already exists: %(listname)s"
 msgstr "Lista %(listname)s już istnieje. "
 
-#: Mailman/Cgi/create.py:213 bin/newlist:216
+#: Mailman/Cgi/create.py:213 bin/newlist:217
 msgid "Illegal list name: %(s)s"
 msgstr "Niedozwolona nazwa listy: %(s)s"
 
@@ -2045,7 +2045,7 @@ msgstr ""
 "Wystąpił nieznany błąd w trakcie tworzenia listy.\n"
 "                Skontaktuj się z administratorem serwera."
 
-#: Mailman/Cgi/create.py:255 bin/newlist:264
+#: Mailman/Cgi/create.py:255 bin/newlist:265
 msgid "Your new mailing list: %(listname)s"
 msgstr "Twoja nowa lista: %(listname)s"
 
@@ -3719,159 +3719,159 @@ msgstr "Prenumeratorzy (tryb wiadomości):"
 msgid "Digest members:"
 msgstr "Prenumeratorzy (tryb paczek):"
 
-#: Mailman/Defaults.py:1675
+#: Mailman/Defaults.py:1682
 msgid "Arabic"
 msgstr "arabski"
 
-#: Mailman/Defaults.py:1676
+#: Mailman/Defaults.py:1683
 msgid "Asturian"
 msgstr "asturyjski"
 
-#: Mailman/Defaults.py:1677
+#: Mailman/Defaults.py:1684
 msgid "Catalan"
 msgstr "kataloński"
 
-#: Mailman/Defaults.py:1678
+#: Mailman/Defaults.py:1685
 msgid "Czech"
 msgstr "czeski"
 
-#: Mailman/Defaults.py:1679
+#: Mailman/Defaults.py:1686
 msgid "Danish"
 msgstr "duński"
 
-#: Mailman/Defaults.py:1680
+#: Mailman/Defaults.py:1687
 msgid "German"
 msgstr "niemiecki"
 
-#: Mailman/Defaults.py:1681
+#: Mailman/Defaults.py:1688
 msgid "English (USA)"
 msgstr "angielski (USA)"
 
-#: Mailman/Defaults.py:1682
+#: Mailman/Defaults.py:1689
 msgid "Spanish (Spain)"
 msgstr "hiszpański (Hiszpania)"
 
-#: Mailman/Defaults.py:1683
+#: Mailman/Defaults.py:1690
 msgid "Estonian"
 msgstr "estoński"
 
-#: Mailman/Defaults.py:1684
+#: Mailman/Defaults.py:1691
 msgid "Euskara"
 msgstr "baskijski"
 
-#: Mailman/Defaults.py:1685
+#: Mailman/Defaults.py:1692
 msgid "Persian"
 msgstr "perski"
 
-#: Mailman/Defaults.py:1686
+#: Mailman/Defaults.py:1693
 msgid "Finnish"
 msgstr "fiński"
 
-#: Mailman/Defaults.py:1687
+#: Mailman/Defaults.py:1694
 msgid "French"
 msgstr "francuski"
 
-#: Mailman/Defaults.py:1688
+#: Mailman/Defaults.py:1695
 msgid "Galician"
 msgstr "galicyjski"
 
-#: Mailman/Defaults.py:1689
+#: Mailman/Defaults.py:1696
 msgid "Greek"
 msgstr "grecki"
 
-#: Mailman/Defaults.py:1690
+#: Mailman/Defaults.py:1697
 msgid "Hebrew"
 msgstr "hebrajski"
 
-#: Mailman/Defaults.py:1691
+#: Mailman/Defaults.py:1698
 msgid "Croatian"
 msgstr "chorwacki"
 
-#: Mailman/Defaults.py:1692
+#: Mailman/Defaults.py:1699
 msgid "Hungarian"
 msgstr "węgierski"
 
-#: Mailman/Defaults.py:1693
+#: Mailman/Defaults.py:1700
 msgid "Interlingua"
 msgstr "interlingua"
 
-#: Mailman/Defaults.py:1694
+#: Mailman/Defaults.py:1701
 msgid "Italian"
 msgstr "włoski"
 
-#: Mailman/Defaults.py:1695
+#: Mailman/Defaults.py:1702
 msgid "Japanese"
 msgstr "japoński"
 
-#: Mailman/Defaults.py:1696
+#: Mailman/Defaults.py:1703
 msgid "Korean"
 msgstr "koreański"
 
-#: Mailman/Defaults.py:1697
+#: Mailman/Defaults.py:1704
 msgid "Lithuanian"
 msgstr "litewski"
 
-#: Mailman/Defaults.py:1698
+#: Mailman/Defaults.py:1705
 msgid "Dutch"
 msgstr "duński"
 
-#: Mailman/Defaults.py:1699
+#: Mailman/Defaults.py:1706
 msgid "Norwegian"
 msgstr "norweski"
 
-#: Mailman/Defaults.py:1700
+#: Mailman/Defaults.py:1707
 msgid "Polish"
 msgstr "polski"
 
-#: Mailman/Defaults.py:1701
+#: Mailman/Defaults.py:1708
 msgid "Portuguese"
 msgstr "portugalski"
 
-#: Mailman/Defaults.py:1702
+#: Mailman/Defaults.py:1709
 msgid "Portuguese (Brazil)"
 msgstr "portugalski (Brazylia)"
 
-#: Mailman/Defaults.py:1703
+#: Mailman/Defaults.py:1710
 msgid "Romanian"
 msgstr "rumuński"
 
-#: Mailman/Defaults.py:1704
+#: Mailman/Defaults.py:1711
 msgid "Russian"
 msgstr "rosyjski"
 
-#: Mailman/Defaults.py:1705
+#: Mailman/Defaults.py:1712
 msgid "Slovak"
 msgstr "słowacki"
 
-#: Mailman/Defaults.py:1706
+#: Mailman/Defaults.py:1713
 msgid "Slovenian"
 msgstr "słoweński"
 
-#: Mailman/Defaults.py:1707
+#: Mailman/Defaults.py:1714
 msgid "Serbian"
 msgstr "serbski"
 
-#: Mailman/Defaults.py:1708
+#: Mailman/Defaults.py:1715
 msgid "Swedish"
 msgstr "szwedzki"
 
-#: Mailman/Defaults.py:1709
+#: Mailman/Defaults.py:1716
 msgid "Turkish"
 msgstr "turecki"
 
-#: Mailman/Defaults.py:1710
+#: Mailman/Defaults.py:1717
 msgid "Ukrainian"
 msgstr "ukraiński"
 
-#: Mailman/Defaults.py:1711
+#: Mailman/Defaults.py:1718
 msgid "Vietnamese"
 msgstr "wietnamski"
 
-#: Mailman/Defaults.py:1712
+#: Mailman/Defaults.py:1719
 msgid "Chinese (China)"
 msgstr "chiński (Chiny)"
 
-#: Mailman/Defaults.py:1713
+#: Mailman/Defaults.py:1720
 msgid "Chinese (Taiwan)"
 msgstr "chiński (Tajwan)"
 
@@ -7375,7 +7375,7 @@ msgstr ""
 "Nie masz wystarczających uprawnień, żeby wysyłać pilną wiadomość na listę \n"
 "%(realname)s. W załączniku znajdziesz swój email.\n"
 
-#: Mailman/Handlers/CookHeaders.py:159
+#: Mailman/Handlers/CookHeaders.py:161
 msgid "%(realname)s via %(lrn)s"
 msgstr "%(realname)s przez %(lrn)s"
 
@@ -7809,8 +7809,8 @@ msgstr "kontrola praw dostępu do pliku %(file)s"
 msgid "%(file)s permissions must be 066x (got %(octmode)s)"
 msgstr "prawa dostępu do pliku %(file)s powinny być ustawione na 066x (są %(octmode)s)"
 
-#: Mailman/MTA/Postfix.py:373 Mailman/MTA/Postfix.py:400
-#: Mailman/MTA/Postfix.py:411 bin/check_perms:125 bin/check_perms:153
+#: Mailman/MTA/Postfix.py:373 Mailman/MTA/Postfix.py:401
+#: Mailman/MTA/Postfix.py:412 bin/check_perms:125 bin/check_perms:153
 #: bin/check_perms:163 bin/check_perms:174 bin/check_perms:199
 #: bin/check_perms:216 bin/check_perms:242 bin/check_perms:265
 #: bin/check_perms:284 bin/check_perms:298 bin/check_perms:318
@@ -7826,7 +7826,7 @@ msgstr "kontrola właściciela pliku %(dbfile)s"
 msgid "%(dbfile)s owned by %(owner)s (must be owned by %(user)s"
 msgstr "%(owner)s jest właścicielem pliku %(dbfile)s (a musi być %(user)s)"
 
-#: Mailman/MTA/Postfix.py:409
+#: Mailman/MTA/Postfix.py:410
 msgid "%(dbfile)s permissions must be 066x (got %(octmode)s)"
 msgstr "prawa dostępu do pliku %(dbfile)s powinny być ustawione na 066x (są %(octmode)s)"
 
@@ -7846,7 +7846,7 @@ msgstr " z adresu %(remote)s"
 msgid "subscriptions to %(realname)s require moderator approval"
 msgstr "prenumerata listy %(realname)s wymaga zgody administratora"
 
-#: Mailman/MailList.py:1038 bin/add_members:252
+#: Mailman/MailList.py:1038 bin/add_members:253
 msgid "%(realname)s subscription notification"
 msgstr "Powiadomienie o prenumeracie %(realname)s"
 
@@ -7968,83 +7968,83 @@ msgstr "Obsługiwane przez Pythona"
 msgid "Gnu's Not Unix"
 msgstr "GNU’s Not Unix"
 
-#: Mailman/i18n.py:102
+#: Mailman/i18n.py:125
 msgid "Mon"
 msgstr "Pon"
 
-#: Mailman/i18n.py:102
+#: Mailman/i18n.py:125
 msgid "Thu"
 msgstr "Czw"
 
-#: Mailman/i18n.py:102
+#: Mailman/i18n.py:125
 msgid "Tue"
 msgstr "Wto"
 
-#: Mailman/i18n.py:102
+#: Mailman/i18n.py:125
 msgid "Wed"
 msgstr "Śro"
 
-#: Mailman/i18n.py:103
+#: Mailman/i18n.py:126
 msgid "Fri"
 msgstr "Pią"
 
-#: Mailman/i18n.py:103
+#: Mailman/i18n.py:126
 msgid "Sat"
 msgstr "Sob"
 
-#: Mailman/i18n.py:103
+#: Mailman/i18n.py:126
 msgid "Sun"
 msgstr "Nie"
 
-#: Mailman/i18n.py:107
+#: Mailman/i18n.py:130
 msgid "Apr"
 msgstr "Kwi"
 
-#: Mailman/i18n.py:107
+#: Mailman/i18n.py:130
 msgid "Feb"
 msgstr "Lut"
 
-#: Mailman/i18n.py:107
+#: Mailman/i18n.py:130
 msgid "Jan"
 msgstr "Sty"
 
-#: Mailman/i18n.py:107
+#: Mailman/i18n.py:130
 msgid "Jun"
 msgstr "Cze"
 
-#: Mailman/i18n.py:107
+#: Mailman/i18n.py:130
 msgid "Mar"
 msgstr "Mar"
 
-#: Mailman/i18n.py:108
+#: Mailman/i18n.py:131
 msgid "Aug"
 msgstr "Sie"
 
-#: Mailman/i18n.py:108
+#: Mailman/i18n.py:131
 msgid "Dec"
 msgstr "Gru"
 
-#: Mailman/i18n.py:108
+#: Mailman/i18n.py:131
 msgid "Jul"
 msgstr "Lip"
 
-#: Mailman/i18n.py:108
+#: Mailman/i18n.py:131
 msgid "Nov"
 msgstr "Lis"
 
-#: Mailman/i18n.py:108
+#: Mailman/i18n.py:131
 msgid "Oct"
 msgstr "Paź"
 
-#: Mailman/i18n.py:108
+#: Mailman/i18n.py:131
 msgid "Sep"
 msgstr "Wrz"
 
-#: Mailman/i18n.py:111
+#: Mailman/i18n.py:134
 msgid "Server Local Time"
 msgstr "Lokalny Czas Serwera"
 
-#: Mailman/i18n.py:150
+#: Mailman/i18n.py:173
 msgid "%(wday)s %(mon)s %(day)2i %(hh)02i:%(mm)02i:%(ss)02i %(tzname)s %(year)04i"
 msgstr "%(wday)s, %(day)2i %(mon)s %(year)04i, %(hh)02i:%(mm)02i:%(ss)02i %(tzname)s"
 
@@ -8095,45 +8095,45 @@ msgid ""
 "files can be `-'.\n"
 msgstr ""
 
-#: bin/add_members:146
+#: bin/add_members:147
 msgid "Already a member: %(member)s"
 msgstr "%(member)s jest już prenumeratorem"
 
-#: bin/add_members:152
+#: bin/add_members:153
 msgid "Bad/Invalid email address: blank line"
 msgstr "Błędny format adresu"
 
-#: bin/add_members:154
+#: bin/add_members:155
 msgid "Bad/Invalid email address: %(member)s"
 msgstr "Błędny adres email: %(member)s"
 
-#: bin/add_members:156
+#: bin/add_members:157
 msgid "Hostile address (illegal characters): %(member)s"
 msgstr ""
 
-#: bin/add_members:158
+#: bin/add_members:159
 msgid "Subscribed: %(member)s"
 msgstr "Zapisano: %(member)s"
 
-#: bin/add_members:199
+#: bin/add_members:200
 msgid "Bad argument to -w/--welcome-msg: %(arg)s"
 msgstr ""
 
-#: bin/add_members:206
+#: bin/add_members:207
 msgid "Bad argument to -a/--admin-notify: %(arg)s"
 msgstr ""
 
-#: bin/add_members:214
+#: bin/add_members:215
 msgid "Cannot read both digest and normal members from standard input."
 msgstr ""
 
-#: bin/add_members:220 bin/config_list:109 bin/export.py:271 bin/find_member:97
-#: bin/inject:91 bin/list_admins:90 bin/list_members:251 bin/sync_members:222
+#: bin/add_members:221 bin/config_list:110 bin/export.py:271 bin/find_member:97
+#: bin/inject:91 bin/list_admins:90 bin/list_members:252 bin/sync_members:222
 #: cron/bumpdigests:86
 msgid "No such list: %(listname)s"
 msgstr "Lista %(listname)s nie istnieje na tym serwerze"
 
-#: bin/add_members:240 bin/change_pw:158 bin/check_db:114 bin/discard:83
+#: bin/add_members:241 bin/change_pw:159 bin/check_db:114 bin/discard:83
 #: bin/sync_members:244 bin/update:302 bin/update:323 bin/update:577
 #: cron/bumpdigests:78
 msgid "Nothing to do."
@@ -8185,7 +8185,7 @@ msgstr ""
 msgid "listname is required"
 msgstr "podaj nazwę listy"
 
-#: bin/arch:143 bin/change_pw:106 bin/config_list:256
+#: bin/arch:143 bin/change_pw:107 bin/config_list:257
 msgid ""
 "No such list \"%(listname)s\"\n"
 "%(e)s"
@@ -8268,23 +8268,23 @@ msgid ""
 "        Print this help message and exit.\n"
 msgstr ""
 
-#: bin/change_pw:144
+#: bin/change_pw:145
 msgid "Bad arguments: %(strargs)s"
 msgstr "Błędny argument: %(strargs)s"
 
-#: bin/change_pw:148
+#: bin/change_pw:149
 msgid "Empty list passwords are not allowed"
 msgstr "Puste hasła nie są dozwolone"
 
-#: bin/change_pw:180
+#: bin/change_pw:181
 msgid "New %(listname)s password: %(notifypassword)s"
 msgstr "Nowe hasło %(notifypassword)s dla listy %(listname)s"
 
-#: bin/change_pw:189
+#: bin/change_pw:190
 msgid "Your new %(listname)s list password"
 msgstr "Nowe hasło dla listy %(listname)s"
 
-#: bin/change_pw:190
+#: bin/change_pw:191
 msgid ""
 "The site administrator at %(hostname)s has changed the password for your\n"
 "mailing list %(listname)s.  It is now\n"
@@ -8649,7 +8649,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: bin/config_list:117
+#: bin/config_list:118
 msgid ""
 "# -*- python -*-\n"
 "# -*- coding: %(charset)s -*-\n"
@@ -8657,43 +8657,43 @@ msgid ""
 "## captured on %(when)s\n"
 msgstr ""
 
-#: bin/config_list:143
+#: bin/config_list:144
 msgid "options"
 msgstr "opcje"
 
-#: bin/config_list:202
+#: bin/config_list:203
 msgid "legal values are:"
 msgstr "dozwolone wartości to:"
 
-#: bin/config_list:269
+#: bin/config_list:270
 msgid "attribute \"%(k)s\" ignored"
 msgstr "zignorowano atrybut \"%(k)s\""
 
-#: bin/config_list:272
+#: bin/config_list:273
 msgid "attribute \"%(k)s\" changed"
 msgstr "zmieniono atrybut \"%(k)s\""
 
-#: bin/config_list:278
+#: bin/config_list:279
 msgid "Non-standard property restored: %(k)s"
 msgstr ""
 
-#: bin/config_list:286
+#: bin/config_list:288
 msgid "Invalid value for property: %(k)s"
 msgstr "Błędna wartość dla opcji: %(k)s"
 
-#: bin/config_list:288
+#: bin/config_list:291
 msgid "Bad email address for option %(k)s: %(v)s"
 msgstr "Błędny adres e-mail dla opcji %(k)s: %(v)s"
 
-#: bin/config_list:345
+#: bin/config_list:348
 msgid "Only one of -i or -o is allowed"
 msgstr "Tylko jeden parametr, -i lub -o jest dozwolony"
 
-#: bin/config_list:347
+#: bin/config_list:350
 msgid "One of -i or -o is required"
 msgstr "Tylko jeden parametr, -i lub -o jest wymagany"
 
-#: bin/config_list:351
+#: bin/config_list:354
 msgid "List name is required"
 msgstr "Wymagana jest nazwa listy"
 
@@ -9486,31 +9486,31 @@ msgid ""
 "Note that listnames are forced to lowercase.\n"
 msgstr ""
 
-#: bin/newlist:161
+#: bin/newlist:162
 msgid "Unknown language: %(lang)s"
 msgstr "Nieznany język: %(lang)s"
 
-#: bin/newlist:166
+#: bin/newlist:167
 msgid "Enter the name of the list: "
 msgstr "Podaj nazwę listy: "
 
-#: bin/newlist:187
+#: bin/newlist:188
 msgid "Enter the email of the person running the list: "
 msgstr "Podaj email opiekuna listy: "
 
-#: bin/newlist:192
+#: bin/newlist:193
 msgid "Initial %(listname)s password: "
 msgstr "Początkowe hasło listy %(listname)s: "
 
-#: bin/newlist:196
+#: bin/newlist:197
 msgid "The list password cannot be empty"
 msgstr "Hasło listy nie może być puste"
 
-#: bin/newlist:219
+#: bin/newlist:220
 msgid " - owner addresses need to be fully-qualified names like \"owner@example.com\", not just \"owner\"."
 msgstr ""
 
-#: bin/newlist:243
+#: bin/newlist:244
 msgid "Hit enter to notify %(listname)s owner..."
 msgstr "Naciśnij Enter, by powiadomić opiekuna listy %(listname)s..."
 
@@ -9730,31 +9730,31 @@ msgstr "%(listname)s %(msg)s nie znalezione jako %(filename)s"
 msgid "No such list (or list already deleted): %(listname)s"
 msgstr "Nie ma takiej listy (lub lista została już skasowana): %(listname)s"
 
-#: bin/rmlist:107
+#: bin/rmlist:108
 msgid "No such list: %(listname)s.  Removing its residual archives."
 msgstr "Nie ma takiej listy: %(listname)s. Usuwanie pozostałych archiwów."
 
-#: bin/rmlist:111
+#: bin/rmlist:112
 msgid "Not removing archives.  Reinvoke with -a to remove them."
 msgstr "Nie usunięto archiwum. Uruchom ponownie z opcją -a."
 
-#: bin/rmlist:125
+#: bin/rmlist:126
 msgid "list info"
 msgstr "informacja o liście"
 
-#: bin/rmlist:133
+#: bin/rmlist:134
 msgid "stale lock file"
 msgstr ""
 
-#: bin/rmlist:141
+#: bin/rmlist:142
 msgid "held message file"
 msgstr "plik wstrzymanych wiadomości"
 
-#: bin/rmlist:146 bin/rmlist:148
+#: bin/rmlist:147 bin/rmlist:149
 msgid "private archives"
 msgstr "prywatne archiwum"
 
-#: bin/rmlist:150 bin/rmlist:152
+#: bin/rmlist:151 bin/rmlist:153
 msgid "public archives"
 msgstr "publiczne archiwum"
 
@@ -9885,7 +9885,7 @@ msgstr "Musisz najpierw poprawić błędne adresy"
 msgid "Added  : %(s)s"
 msgstr "Dodano: %(s)s"
 
-#: bin/sync_members:288
+#: bin/sync_members:289
 msgid "Removed: %(s)s"
 msgstr "Usunięto: %(s)s"
 
