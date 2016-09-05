@@ -9,6 +9,7 @@ later they are ISO-8859-2 reencoded and imported to [Mailman 2.1](https://code.l
 
 ## Supported versions
 [Download l10n files](https://github.com/aviarypl/mailman-l10n-pl/releases) for:
+* [2.1.23](https://github.com/aviarypl/mailman-l10n-pl/releases/2.1.23)
 * [2.1.22](https://github.com/aviarypl/mailman-l10n-pl/releases/2.1.22)
 * [2.1.21](https://github.com/aviarypl/mailman-l10n-pl/releases/2.1.21)
 * [2.1.20](https://github.com/aviarypl/mailman-l10n-pl/releases/2.1.20)
